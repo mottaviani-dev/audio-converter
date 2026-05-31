@@ -25,12 +25,12 @@ Before you begin, ensure you have Python installed on your system. This project 
 
 2. **Install Required Python Libraries**
    ```bash
-   pip install -r requirements.txt
+   uv sync
 
 #### How to Use
 To start converting audio files, run the following command from the project directory:
 1. ```bash
-   ./manage_audio.sh
+   ./convert.sh
 
 Follow the on-screen prompts to choose the source and destination folders, select the input and output formats, and start the conversion process.
 

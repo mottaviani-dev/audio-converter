@@ -1,0 +1,11 @@
+[project]
+name = "audio-converter"
+version = "0.1.0"
+description = "Efficiently convert audio files across multiple formats with folder structure preservation."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "audioop-lts>=0.2.2",
+    "pydub==0.25.1",
+    "tqdm==4.67.3",
+]
