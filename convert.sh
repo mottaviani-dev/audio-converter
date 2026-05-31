@@ -4,6 +4,7 @@
 run_conversion_script() {
     echo "Running conversion script..."
     read -p "Enter source folder path: " src_folder
+    read -p "Enter output folder path: " output_folder
 
     echo "Select the input audio format:"
     select format_option in "mp3" "m4a" "ogg" "flac" "wav"; do
@@ -21,7 +22,7 @@ run_conversion_script() {
         esac
     done
 
-    python3 convert.py "$src_folder" "$format_option" "$output_format"
+    uv run convert.py "$src_folder" "$output_folder" "$format_option" "$output_format"
 }
 
 run_conversion_script
